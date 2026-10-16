@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - College Event</title>
+</head>
+<body>
+
+    <header>
+        <h2>College Event Admin</h2>
+        <nav>
+            <button onclick="location.href='admin.html'">Dashboard</button>
+            <button onclick="location.href='user.html'">View User Side</button>
+            <a href="#">Logout</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="form-section">
+            <h3>Create New Event</h3>
+            <form id="addEventForm">
+                <div class="form-group">
+                    <label for="eventFees">Fees ($)</label>
+                    <input type="number" id="eventFees" placeholder="e.g. 10" required>
+                </div>
+                <div class="form-group">
+                    <label for="eventTime">Contest Time</label>
+                    <input type="text" id="eventTime" placeholder="e.g. 10:30-11:30" required>
+                </div>
+                <button type="submit" class="btn-submit">Add Event</button>
+            </form>
+        </div>
+
+        <h3>Managed Events</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Fees</th>
+                    <th>Contest Time</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>$10</td>
+                    <td>10:30-11:30</td>
+                    <td><button class="btn-danger">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>$5</td>
+                    <td>12:30-1:00</td>
+                    <td><button class="btn-danger">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>$5</td>
+                    <td>2:00-5:00</td>
+                    <td><button class="btn-danger">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
+
